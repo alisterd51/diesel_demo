@@ -1,0 +1,13 @@
+[package]
+name = "diesel_demo"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+diesel = { version = "2.2.4", features = ["postgres"] }
+diesel_migrations = { version = "2.2.0", features = ["postgres"] }
+
+[profile.release]
+panic = "abort"
+codegen-units = 1
+lto = "fat"

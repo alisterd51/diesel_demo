@@ -1,0 +1,8 @@
+/target
+.dockerignore
+.env
+.gitignore
+compose.yaml
+Containerfile
+README.md
+sample.env
